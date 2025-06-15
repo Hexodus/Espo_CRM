@@ -27,6 +27,9 @@ services:
       ESPOCRM_SITE_URL: "http://localhost:8080"
     volumes:
       - espocrm:/var/www/html
+      # Mount local folder into the container
+      # i.e. a public folder as endpoint for automation
+      - ./automations:/var/www/html/custom/Espo/Custom/automations:ro
     restart: always
     ports:
       - 8080:80

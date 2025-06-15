@@ -1,0 +1,2 @@
+# Disable rewriting in this directory so Apache serves files directly.
+RewriteEngine Off
